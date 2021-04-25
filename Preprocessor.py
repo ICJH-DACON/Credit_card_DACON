@@ -1,15 +1,16 @@
 import pandas as pd
 
 class Preprocessor():
-    def __init__(self,
-                 dir):
-        self.df = pd.read_csv(dir)
+    def __init__(self):
+        print("Preprocessor is Operating")
 
-    def preprocessing(self):
-        self.df.drop(columns="index", axis=1, inplace=True)
-        self.df.drop('FLAG_MOBIL', axis=1, inplace=True)
+    def preprocessing(self, dir):
+        df = pd.read_csv(dir)
 
-        df = control_outliner(self.df)
+        df.drop(columns="index", axis=1, inplace=True)
+        df.drop('FLAG_MOBIL', axis=1, inplace=True)
+
+        df = control_outliner(df)
         df = dummy_object(df)
         df = encode_date(df)
         df = encode_columns(df)
@@ -59,4 +60,3 @@ def encode_yes_no(index):
         return 1
     else:
         return 0
-
