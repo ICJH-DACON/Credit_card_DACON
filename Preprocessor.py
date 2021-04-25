@@ -16,6 +16,17 @@ class Preprocessor():
         df = encode_columns(df)
         return df
 
+    def preprocessing_for_analysis(self, dir):
+        df = pd.read_csv(dir)
+
+        df.drop(columns="index", axis=1, inplace=True)
+        df.drop('FLAG_MOBIL', axis=1, inplace=True)
+
+        df = control_outliner(df)
+        df = encode_date(df)
+        df = encode_columns(df)
+        return df
+
 def control_outliner(df):
     df.loc[df['child_num'] > 2, 'child_num'] = 3
 
