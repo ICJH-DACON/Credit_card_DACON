@@ -33,8 +33,6 @@ https://dacon.io/competitions/official/235713/overview/description/
 
         df = encode_all_order_type(df) #edu_type, family_type
         df = encode_YN(df)
-
-        return df
 '''
 
 > https://blog.naver.com/dalgoon02121/222340409616 보고 참고
