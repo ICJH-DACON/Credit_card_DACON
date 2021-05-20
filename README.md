@@ -29,7 +29,7 @@ family type을 더미할 때
 
 ### pycaret 모델 생성 
 
-**preprocessor 
+** preprocessor 
 
         drop_df_candidate = df[(df['DAYS_EMPLOYED']) > 0].index
         df.loc[drop_df_candidate, 'DAYS_EMPLOYED'] = 0
