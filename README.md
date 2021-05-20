@@ -2,20 +2,27 @@
 https://dacon.io/competitions/official/235713/overview/description/
 
 <hr>
-# family type , edu order
+
+family type , edu order
 0.7428531031, DACON점수
 
 최소값으로 정규화한 결과는 동일 
+
 <hr>
-# employed_date 0이상을 drop으로 바꿨을 때 
+
+employed_date 0이상을 drop으로 바꿨을 때 
 0.7438235671, DACON점수
 비슷함
+
 <hr>
-# family type을 더미할 때 
+
+family type을 더미할 때 
 ![image-3.png](attachment:image-3.png)
 살짝 떨어짐
+
 <hr>
-# 변수 후진제거 했을 때(과적합)
+
+변수 후진제거 했을 때(과적합)
 1.1531252015	
 
 <hr>
