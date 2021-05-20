@@ -23,7 +23,6 @@ https://dacon.io/competitions/official/235713/overview/description/
 ### pycaret 모델 생성 
 **preprocessor 
 '''
-    def preprocessing(self, dir):
         df = pd.read_csv(dir)
 
         drop_df_candidate = df[(df['DAYS_EMPLOYED']) > 0].index
