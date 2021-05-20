@@ -28,6 +28,7 @@ family type을 더미할 때
 <hr>
 
 ### pycaret 모델 생성 
+
 **preprocessor 
 
         drop_df_candidate = df[(df['DAYS_EMPLOYED']) > 0].index
