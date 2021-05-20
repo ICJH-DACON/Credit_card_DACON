@@ -40,7 +40,7 @@ family type을 더미할 때
 
         df = encode_all_order_type(df) #edu_type, family_type
         df = encode_YN(df)
-'''
+
 
 > https://blog.naver.com/dalgoon02121/222340409616 보고 참고<br>
 > pycaret 사용법(가상환경 설정) https://pycaret.org/install/
